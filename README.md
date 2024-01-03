@@ -1,7 +1,9 @@
 # Statistiska Metoder - Alexander Wessner
+Schema: **v.1 - v.6** **01/01-2024 - 02/09-2024**<br>
 Kurs (30p) Grundläggande Statistisk Analys, ITHS-2024
 
 ## Python
+
 ### Libs
 - Pandas
 - NumPy
