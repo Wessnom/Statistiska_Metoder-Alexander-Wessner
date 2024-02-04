@@ -36,7 +36,7 @@ The data used comes from the [Iris Flower Dataset](https://www.kaggle.com/datase
 The dataset holds measurements of 150 Iris flowers evenly destributed among 3 subspecies (50 each), *Iris Setosa*, *Iris Versicolor* and *Iris Virginica*. 
 
 This image shows the different subspecies:
-![](assets/Iris_flower_overview.png)
+![](Assets/Iris_flower_overview.png)
 
 Every measurement includes the following:
 - Petal Width
@@ -84,7 +84,7 @@ $\alpha = 0.05$
 
 Upon initial examination of the petal point distribution, it looks like the relationship between petal width and length is linear. Though there is a gap with no measurements, the overall trend does seem linear in nature.
 
-![](assets/regressionline_petals.png)
+![](Assets/regressionline_petals.png)
 
 <br>
 
@@ -92,11 +92,11 @@ Upon initial examination of the petal point distribution, it looks like the rela
 
 Transitioning to the sepal point distribution, there is an absence of apparent  correlation among the values. Although a regression plot displays a regression line, the widely scattered points indicate a lack of a discernible linear relationship between them.
 
-![](assets/sepal_regressionline.png)
+![](Assets/sepal_regressionline.png)
 
 Alternatively, examining sepal data categorized by species may offer a more insightful explanation for the relationship between points. This plot seems to provide a clearer dpiction of the connection between width and height. Specifically, in the case of Iris Setosa, there appears to be some observable correlation
 
-![](assets/sepal_species_regression.png)
+![](Assets/sepal_species_regression.png)
 
 <br><br>
 
@@ -107,14 +107,14 @@ Examining a correlation heatmap of the entire dataset, including various species
 - For sepals, the correlation between width and length across the entire dataset is nearly zero. Even when dividing the dataset by subspecies, this relationship remains consistent, except for Versicolor, which exhibits some correlation. 
 - In the case of petals, a correlation between width and length, as noted earlier, is evident. However, dividing the dataset by species reveals a notably weaker correlation between petal measurements. 
 
-![](assets/heatmap_r_squared.png)
+![](Assets/heatmap_r_squared.png)
 The plot illustrates r-squared values to indicate the strength of correlation exclusively. Unlike an r-value, which ranges from -1 to 1, r-squared spans from 0 to 1. Values closer to 0 signify weaker correlation, while those approaching 1 indicate stronger correlation. Given the report's emphasis on determining the presence of correlation, regardless of its direction, the decision to use r-squared was based on its relevance and clarity in portraying correlation in this context. 
 
 <br>
 
 Considering the observed weaker correlation, especially when dividing petals by species, a scatter plot with regression lines provides a detailed explanation of this relationship. Versicolor exhibits some correlation, while Setosa and Virginica display considerable scatter, deviating from the regression line. Interestingly, it appears that Setosa petals may have an independent relationship between width and height, as most data points share the same width measurement regardless of length.
 
-![](assets/petals_regressionline_by_species.png)
+![](Assets/petals_regressionline_by_species.png)
 
 <br><br>
 
@@ -177,7 +177,7 @@ While it is possible to predict values outside the dataset, the model's accuracy
 
 As an illustration, 50 randomly generated x-values (width) for petals, falling within the dataset's minimum and maximum width values, are superimposed on the earlier regression plot for petals. The model successfully predicts y-values (length) for each input x-value, and these predictions align with the regression line, affirming the model's effectiveness within the dataset's range. 
 
-![](assets/predicted_values_sampledata.png)
+![](Assets/predicted_values_sampledata.png)
 
 It is important to highlight the data gap between the smaller measurements, Setosa, and the larger ones, Versicolor & Virginica. Notably, there are no data points within this range in the dataset. Given the lack of correlation within individual species, apart from Versicolor, accurate prediction of petals falling within this range might be challenging. However, since measurements in this range appear to be rare, the overall accuracy of the model is likely not significantly affected, though this potential limitation is worth acknowleding. <br>
 
