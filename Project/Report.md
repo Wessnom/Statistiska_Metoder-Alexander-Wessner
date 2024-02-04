@@ -4,7 +4,8 @@
 
 <br>
 
-Statistical Analysis AI & ML - 2024
+Statistical Analysis AI & ML - 2024 <br>
+&nbsp; - By Alexander Wessner
 
 <br>
 
